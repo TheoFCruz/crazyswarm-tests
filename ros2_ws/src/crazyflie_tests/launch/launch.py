@@ -21,6 +21,10 @@ def generate_launch_description():
         get_package_share_directory(package_name),
         'config',
         'teleop.yaml')
+    rviz_config_path = os.path.join(
+        get_package_share_directory(package_name),
+        'config',
+        'config.rviz')
 
     return LaunchDescription(
         [
@@ -37,6 +41,7 @@ def generate_launch_description():
                     'crazyflies_yaml_file': crazyflies_yaml_path,
                     'motion_capture_yaml_file': motion_capture_yaml_path,
                     'teleop_yaml_file': teleop_yaml_path,
+                    'rviz_config_file': rviz_config_path,
                     'rviz': 'True',
                     'gui': 'False'
                 }.items(),

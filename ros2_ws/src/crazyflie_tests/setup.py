@@ -28,7 +28,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'hello_world = crazyflie_tests.hello_world:main'
+            'collision_avoidance = crazyflie_tests.collision_avoidance:main'
         ],
     },
 )
